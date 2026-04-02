@@ -41,16 +41,17 @@
             width: 100%;
             max-width: 1140px;
             margin: 0 auto;
-            padding: 20px 20px 60px;
+            padding: 20px 20px 40px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             text-align: left;
+            justify-content: flex-end;
         }
 
         /* Logo */
         .logo-wrap {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .logo-wrap img {
@@ -64,7 +65,7 @@
             display: flex;
             flex-direction: row;
             gap: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 12px;
             align-items: center;
             flex-wrap: wrap;
         }
@@ -98,7 +99,7 @@
             font-weight: 600;
             line-height: 43px;
             color: #fff;
-            margin-bottom: 24px;
+            margin-bottom: 10px;
             max-width: 700px;
         }
 
@@ -111,13 +112,35 @@
             font-family: 'Saira', sans-serif;
             font-size: 18px;
             color: #fff;
-            margin-bottom: 36px;
+            margin-bottom: 20px;
             max-width: 500px;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         .hero-para strong {
             font-weight: 700;
+        }
+
+        /* Horário destaque */
+        .horario-destaque {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 6px;
+            background: rgba(35, 235, 232, 0.12);
+            border: 1.5px solid #23ebe8;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #23ebe8;
+            letter-spacing: 0.5px;
+        }
+
+        .horario-destaque svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
         }
 
         /* CTA Button */
@@ -276,9 +299,12 @@
             <!-- Paragraph -->
             <p class="hero-para">
                 Será um evento de <strong>3 horas</strong> onde vamos alavancar juntos até bater a meta de
-                <strong>1k de lucro</strong><br><br>
-                Entre para o grupo e aguarde o link da live<br><br>
-                <strong>Início às 19:00 🕖</strong>
+                <strong>1k de lucro</strong><br>
+                Entre para o grupo e aguarde o link da live<br>
+                <span class="horario-destaque">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#23ebe8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    Início às 19:00
+                </span>
             </p>
 
             <!-- CTA Button -->
